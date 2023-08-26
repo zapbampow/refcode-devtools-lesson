@@ -9,6 +9,6 @@ function showHtml() {
 
 function showCss() {
   console.log("show css elements info");
-  css.classList.add("show");
+  // css.classList.add("show");
   html.classList.remove("show");
 }
