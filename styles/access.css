@@ -1,0 +1,11 @@
+#menu,
+#keyboard,
+#inspect {
+    display: none;
+}
+
+.accessing_dev_tools #menu.show,
+.accessing_dev_tools #keyboard.show,
+.accessing_dev_tools #inspect.show {
+    display: grid;
+}

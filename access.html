@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/access.css">
+    <title>Exploring DevTools</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Intro</a></li>
+            <li class="active"><a href="access.html" aria-current="page">Accessing</a></li>
+            <li><a href="elements.html">Elements</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1>Exploring DevTools</h1>
+        <section class="accessing_dev_tools">
+            <h2>Accessing Browser DevTools</h2>
+
+            <ul class="button-menu">
+                <li><button onclick="showMenu()">
+                        <div>From the Menu</div>
+                    </button>
+                </li>
+
+                <li>
+                    <button onclick="showKeyboard()">
+                        <div>From the Keyboard</div>
+                    </button>
+                </li>
+                <li>
+                    <button onclick="showInspect()">
+                        <div>From the Page</div>
+                    </button>
+                </li>
+            </ul>
+
+            <div id="menu" class="section-content show">
+                <h3>From the Menu</h3>
+                <p>View > Developer > DevTools</p>
+                <div class="img-container"><img src="./images/menuAccessDevTools.png" alt=""></div>
+            </div>
+
+            <div id="keyboard" class="section-content">
+                <div>
+                    <h3>From the Keyboard</h3>
+                    <p>Mac: Option + Command + I</p>
+                    <p>Windows: Control + Shift + I</p>
+                </div>
+
+                <div>
+                    <h3>Other shortcuts</h3>
+                    <p>Mac: Option + Command + J</p>
+                    <p>Mac: Option + Command + C</p>
+                    <p>Windows: Control + Shift + J</p>
+                    <p>Windows: Control + Shift + C</p>
+                </div>
+
+            </div>
+
+            <div id="inspect" class="section-content">
+                <h3>From the Page</h3>
+                <p>Right click on an element and select "Inspect" from the menu</p>
+                <div class="img-container"><img src="./images/inspectElement.png" alt=""></div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="./scripts/access.js"></script>
+</body>
+
+</html>

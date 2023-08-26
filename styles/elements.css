@@ -1,0 +1,9 @@
+#html,
+#css {
+    display: none;
+}
+
+.dev_tools_elements #css.show,
+.dev_tools_elements #html.show {
+    display: grid;
+}
