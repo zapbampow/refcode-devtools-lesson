@@ -10,6 +10,9 @@ It is focused primarily on the Elements tab because that is what beginner studen
 - Show the Computed tab for CSS
 
 - look at how the navbar transition is happening (will use this info later in debugging)
+- look at the bugs on the elements page and let the students brainstorm solving them
+
+- look at the network page and see how you can see the data that is retrieve from the api
 
 ## Built in bugs
 The site has some intentionally built in bugs to show how you use the dev tools to debug your code.
