@@ -1,0 +1,21 @@
+.tab {
+    position: relative;
+}
+
+.tab.active:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #161616;
+    bottom: -1px;
+    left: 0;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.show {
+    display: grid;
+}

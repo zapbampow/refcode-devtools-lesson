@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/tabs.css">
+    <link rel="stylesheet" href="./styles/bugs.css">
+    <title>Exploring DevTools</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Intro</a></li>
+            <li><a href="access.html">Accessing</a></li>
+            <li><a href="elements.html">Elements</a></li>
+            <li><a href="network.html">Network</a></li>
+            <li class="active"><a href="bugs.html" aria-current="page">Bugs</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1>Exploring DevTools</h1>
+        <section class="dev_tools_elements">
+            <h2>Bugs</h2>
+
+            <ul class="button-menu">
+                <li>
+                    <button id="bug1" class="tab" onclick="setTab('bug1')">
+                        <div>Bug 1</div>
+                    </button>
+                </li>
+                <li>
+                    <button id="bug2" class="tab" onclick="setTab('bug2')">
+                        <span>Bug 2</span>
+                    </button>
+                </li>
+                <li>
+                    <button id="bug3" class="tab" onclick="setTab('bug3')">
+                        <span>Bug 3</span>
+                    </button>
+                </li>
+                <li>
+                    <button id="bug4" class="tab" onclick="setTab('bug4')">
+                        <span>Bug 4</span>
+                    </button>
+                </li>
+                <li>
+                    <button id="bug5" class="tab" onclick="setTab('bug5')">
+                        <span>Bug 5</span>
+                    </button>
+                </li>
+            </ul>
+
+            <div id="bug1-content" class="section-content tab-content show">
+                <h3>Bug 1</h3>
+                <p>Bugs are a normal part of coding</p>
+                < <p>Sometimes they are pretty simple and sometimes they take hours to fix.</p>
+            </div>
+
+            <div id="bug2-content" class="section-content tab-content">
+                <h3>Bug 2</h3>
+                <p Why is this text not showing up?</p>
+                <p>This bug is a little more tricky than the last one. There should be a paragraph above this one.</p>
+            </div>
+
+            <div id="bug3-content" class="section-content tab-content">
+                <h3>Bug 3</h3>
+                <p class="red-text">This text should be red. What's up with it?</p>
+            </div>
+
+            <div id="bug4-content" class="section-content tab-content">
+                <h3>Bug 4</h3>
+                <h4>List Bug 1</h4>
+                <ul class="mb-8">
+                    <p>This should have a dot next to it to mark it as a list item</p>
+                    <p>So should this.</p>
+                    <p>Why don't these have dots to the left of them.</p>
+                    <p>They should look like the dot next to Item 1 below.</p>
+                </ul>
+
+                <h4>List Bug 2</h4>
+                <p>These should all be lined up with the same type of dot next to them. What did I do wrong?</p>
+                <ul>
+                    <li>Item 1</li>
+                    <ul>
+                        <li>Item 2</li>
+                    </ul>
+                    <ul>
+                        <li>Item 3</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div id="bug5-content" class="section-content tab-content">
+                <h3>Bug 5</h3>
+                <p class="more-red-text">This text should also be red. What is wrong?</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./scripts/tabs.js"></script>
+
+</body>
+
+</html>
