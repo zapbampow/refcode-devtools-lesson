@@ -15,7 +15,7 @@ It is focused primarily on the Elements tab because that is what beginner studen
 - look at the network page and see how you can see the data that is retrieve from the api
 
 ## Built in bugs
-In addition to the Bugs page, the site has some intentionally built in bugs to show how you use the dev tools to debug your code.
+In addition to the Bugs page, the site has a couple of intentionally built in bugs to show how you use the dev tools to debug your code.
 
 ### CSS Bugs with the menu button hover affect on the 'Accessing' and 'Elements' pages
 #### Bug 1: The scale transition is jumpy instead of smooth
@@ -23,11 +23,3 @@ In addition to the Bugs page, the site has some intentionally built in bugs to s
 - Why not?
 	- It doesn't have a transition 
 
-#### Bug 2: The CSS button on the Elements page doesn't transition at all
-- The text is in a `span` instead of a `div`
-- Solution 1: make it a `div`
-- Solution 1: set it's `display` property to `block` or `inline-block`
-	- transforms don't apply to `inline` elements
-
-### JS Bug: Clicking the CSS button does not show what I want
-- the `showCss` function in the elements tab has commented out the line that adds the `show` class to the css content

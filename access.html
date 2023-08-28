@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/access.css">
+    <link rel="stylesheet" href="./styles/tabs.css">
     <title>Exploring DevTools</title>
 </head>
 
@@ -31,30 +31,30 @@
             <h2>Accessing Browser DevTools</h2>
 
             <ul class="button-menu">
-                <li><button onclick="showMenu()">
+                <li><button id="fromMenu" class="tab active" onclick="setTab('fromMenu')">
                         <div>From the Menu</div>
                     </button>
                 </li>
 
                 <li>
-                    <button onclick="showKeyboard()">
+                    <button id="fromKeyboard" class="tab" onclick="setTab('fromKeyboard')">
                         <div>From the Keyboard</div>
                     </button>
                 </li>
                 <li>
-                    <button onclick="showInspect()">
+                    <button id="fromPage" class="tab" onclick="setTab('fromPage')">
                         <div>From the Page</div>
                     </button>
                 </li>
             </ul>
 
-            <div id="menu" class="section-content show">
+            <div id="fromMenu-content" class="section-content tab-content show">
                 <h3>From the Menu</h3>
                 <p>View > Developer > DevTools</p>
                 <div class="img-container"><img src="./images/menuAccessDevTools.png" alt=""></div>
             </div>
 
-            <div id="keyboard" class="section-content">
+            <div id="fromKeyboard-content" class="section-content tab-content">
                 <div>
                     <h3>From the Keyboard</h3>
                     <p>Mac: Option + Command + I</p>
@@ -71,7 +71,7 @@
 
             </div>
 
-            <div id="inspect" class="section-content">
+            <div id="fromPage-content" class="section-content tab-content">
                 <h3>From the Page</h3>
                 <p>Right click on an element and select "Inspect" from the menu</p>
                 <div class="img-container"><img src="./images/inspectElement.png" alt=""></div>
@@ -80,7 +80,7 @@
         </section>
     </main>
 
-    <script src="./scripts/access.js"></script>
+    <script src="./scripts/tabs.js"></script>
 </body>
 
 </html>

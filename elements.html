@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/elements.css">
+    <link rel="stylesheet" href="./styles/tabs.css">
     <title>Exploring DevTools</title>
 </head>
 
@@ -32,18 +32,18 @@
 
             <ul class="button-menu">
                 <li>
-                    <button onclick="showHtml()">
+                    <button id="html-tab" class="tab active" onclick="setTab('html-tab')">
                         <div>HTML</div>
                     </button>
                 </li>
                 <li>
-                    <button onclick="showCss()">
+                    <button id="css-tab" class="tab" onclick="setTab('css-tab')">
                         <span>CSS</span>
                     </button>
                 </li>
             </ul>
 
-            <div id="html" class="section-content show">
+            <div id="html-tab-content" class="section-content tab-content show">
                 <h3>View and Select HTML Elements</h3>
                 <p>Updates are temporary. They only last until you refresh the page. Then they go back to the
                     original
@@ -51,7 +51,7 @@
                 <div class="img-container"><img src="./images/viewHtml.gif" alt=""></div>
             </div>
 
-            <div id="css" class="section-content">
+            <div id="css-tab-content" class="section-content tab-content">
                 <h3>View and Change CSS</h3>
                 <p>Updates are temporary. They only last until you refresh the page. Then they go back to the original
                     code.</p>
@@ -60,7 +60,7 @@
         </section>
     </main>
 
-    <script src="./scripts/elements.js"></script>
+    <script src="./scripts/tabs.js"></script>
 </body>
 
 </html>
