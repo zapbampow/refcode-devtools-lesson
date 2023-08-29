@@ -57,13 +57,18 @@
                         <span>Bug 5</span>
                     </button>
                 </li>
+                <li>
+                    <button id="bug6" class="tab" onclick="setTab('bug6')">
+                        <span>Bug 6</span>
+                    </button>
+                </li>
             </ul>
 
             <div id="bug1-content" class="section-content tab-content show">
                 <h3>Bug 1</h3>
                 <p>Bugs are a normal part of coding</p>
                 < <p>Sometimes they are pretty simple and sometimes they take hours to fix.</p>
-                <p>That "<" above shouldn't be there.</p>
+                    <p>That "<" above shouldn't be there.</p>
             </div>
 
             <div id="bug2-content" class="section-content tab-content">
@@ -103,11 +108,31 @@
             <div id="bug5-content" class="section-content tab-content">
                 <h3>Bug 5</h3>
                 <p class="more-red-text">This text should also be red. What is wrong?</p>
+                <p>You can find the problem in the the DevTools, but it may be easier to find in VS Code.</p>
             </div>
+
+            <div id="bug6-content" class="section-content tab-content">
+                <h3>Bug 6</h3>
+                <div class="equation-section">
+                    <h4>Add 2 numbers to make 10</h4>
+                    <div class="equation">
+                        <input type="number" id="number-input-1" min="0" max="9" placeholder="number">
+                        +
+                        <input type="number" id="number-input-2" min="0" max="9" placeholder="number">
+                        =
+                        <span id="sum">?</span>
+                    </div>
+                    <button onClick="addNumbers()">Get answer</button>
+
+                    <h4>Is the answer equal to 10?</h4>
+                    <div id="equals10"></div>
+
+                </div>
         </section>
     </main>
 
     <script src="./scripts/tabs.js"></script>
+    <script src="./scripts/bugs.js"></script>
 
 </body>
 

@@ -9,3 +9,18 @@
 div: color: .more-red-text {
     color: red;
 }
+
+
+.equation-section {
+    display: grid;
+    gap: 1rem;
+}
+
+.equation {
+    display: flex;
+    gap: 1rem;
+}
+
+.equation input {
+    width: 100px;
+}
