@@ -4,7 +4,7 @@ This is a lession to introduce Chrome DevTools and some of their uses.
 It is focused primarily on the Elements tab because that is what beginner students will use the most.
 
 ## Teaching this lesson
-- Have the students download the code from the repository and open it in VS Code.
+- Have the students [download the code](https://github.com/zapbampow/refcode-devtools-lesson/archive/refs/heads/main.zip) from the repository and open it in VS Code.
 - Load the site and walk through the core information
 - Show how to open Chrome's DevTools
 - Show how to select elements and play with their CSS
